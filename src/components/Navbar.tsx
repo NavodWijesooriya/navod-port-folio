@@ -12,12 +12,12 @@ const Navbar = () => {
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Brand */}
         <Link href="/" className="text-2xl font-extrabold text-white tracking-tight">
-          <span className="text-green-500 italic">Navod</span> Me
+          <span className="text-green-500 italic">Navod</span> Dev
         </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center space-x-8 text-gray-300 font-medium">
-          {['Home', 'Case Studies', 'Testimonials', 'Recent work', 'Get In Touch'].map((item) => (
+          {['Home', 'Projects', 'Skyles', 'Resume', 'Get In Touch'].map((item) => (
             <li key={item}>
               <Link
                 href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
@@ -34,7 +34,7 @@ const Navbar = () => {
           href="#contact"
           className="hidden md:inline-block px-5 py-2 bg-green-600 text-white font-semibold rounded-md shadow hover:bg-green-700 transition-all duration-300"
         >
-          Let’s get started
+          Hire Me
         </Link>
 
         {/* Mobile Toggle */}
@@ -54,7 +54,7 @@ const Navbar = () => {
         }`}
       >
         <div className="bg-gray-900 rounded-lg px-6 py-4 space-y-4 text-gray-300 font-medium">
-          {['Home', 'Case Studies', 'Testimonials', 'Recent work', 'Get In Touch'].map((item) => (
+          {['Home', 'Projects', 'Skills', 'Resume', 'Get In Touch'].map((item) => (
             <Link
               key={item}
               href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
