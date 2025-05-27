@@ -1,6 +1,7 @@
 'use client'
 
 import { Ghost } from 'lucide-react'
+import Link from 'next/link' // Add this import
 
 export default function NotFound() {
   return (
@@ -14,16 +15,16 @@ export default function NotFound() {
 
       {/* Description */}
       <p className="mt-2 text-gray-400 max-w-md">
-        Sorry, the page you're looking for doesn't exist or has been moved.
+        Sorry the page you are looking for does not exist or has been moved.
       </p>
 
       {/* CTA Button */}
-      <a
+      <Link
         href="/"
         className="mt-6 inline-block px-6 py-2 bg-green-600 text-white font-semibold rounded-md shadow hover:bg-green-700 transition-all duration-300"
       >
         Go Back Home
-      </a>
+      </Link>
     </div>
   )
 }
