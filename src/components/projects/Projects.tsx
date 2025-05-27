@@ -40,7 +40,7 @@ const ProjectsPage = () => {
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">My Projects</h1>
         <p className="text-center text-gray-400 max-w-xl mx-auto mb-12">
-          A selection of the apps and websites I've built using modern web technologies.
+          A selection of the apps and websites I have built using modern web technologies.
         </p>
         <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
