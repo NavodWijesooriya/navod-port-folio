@@ -13,6 +13,7 @@ const Navbar = () => {
     { label: 'Skills', href: '/skills' },
     { label: 'Resume', href: '/resume' },
     { label: 'Get In Touch', href: '/contact' },
+    { label: 'About Me', href: '/about' },
   ]
 
   return (
@@ -57,9 +58,8 @@ const Navbar = () => {
 
       {/* Mobile Dropdown */}
       <div
-        className={`md:hidden transition-all duration-300 overflow-hidden ${
-          menuOpen ? 'max-h-96 mt-2' : 'max-h-0'
-        }`}
+        className={`md:hidden transition-all duration-300 overflow-hidden ${menuOpen ? 'max-h-96 mt-2' : 'max-h-0'
+          }`}
       >
         <div className="bg-gray-900 rounded-lg px-6 py-4 space-y-4 text-gray-300 font-medium">
           {navItems.map(({ label, href }) => (
@@ -77,7 +77,7 @@ const Navbar = () => {
             className="block w-full text-center px-5 py-2 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 transition"
             onClick={() => setMenuOpen(false)}
           >
-            Let’s get started
+            Hire Me
           </Link>
         </div>
       </div>
