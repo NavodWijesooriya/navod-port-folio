@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Navod - Portfolio & Personal Website",
   description: "Professional portfolio showcasing projects, skills, and experience in software development and design by Navod",
-  keywords: ["portfolio", "developer", "software engineer", "web development", "projects", "skills", "navod" , "navodwijesooriya", "navod wijesooriya portfolio"],
+  keywords: ["portfolio", "developer", "software engineer", "web development", "projects", "skills", "navod", "navodwijesooriya", "navod wijesooriya portfolio"],
   authors: [{ name: "Navod" }],
   creator: "Navod",
-  publisher: "Navod", 
+  publisher: "Navod",
   formatDetection: {
     email: false,
     telephone: false,
   },
-  metadataBase: new URL("https://navodwijesooriya.me"),
+  metadataBase: new URL("Navod Wijesooriya Portfolio", "https://navodwijesooriya.me"),
   alternates: {
     canonical: "/",
   },
