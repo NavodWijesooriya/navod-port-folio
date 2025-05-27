@@ -19,17 +19,17 @@ const projects: Project[] = [
     tags: ['Next.js', 'Firebase', 'Tailwind'],
   },
   {
-    title: 'Blog CMS',
-    description: 'A headless CMS blog built using Payload, SQLite, and Docker.',
-    link: 'https://your-blog-cms.com',
-    image: '/images/blog-cms.png',
-    tags: ['Payload', 'SQLite', 'Docker'],
+    title: 'Customer Issues Tracker',
+    description: 'A customer issues tracking system built with React 19, Node.js, and MongoDB.',
+    link: 'https://crm-interithm.vercel.app/',
+    image: '/assets/crm.png',
+    tags: ['React', 'Firebase', 'Nextjs'],
   },
   {
     title: 'Portfolio Website',
     description: 'My personal portfolio built with React 19 and styled with Tailwind CSS.',
     link: '#',
-    image: '/images/portfolio.png',
+    image: '/assrts/port-folio.png',
     tags: ['React 19', 'Tailwind', 'Next.js'],
   },
 ];
