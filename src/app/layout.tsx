@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ClientLayout from "@/components/ClientLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +15,19 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Navod - Portfolio & Personal Website",
-  description: "Professional portfolio showcasing projects, skills, and experience in software development and design by Navod",
-  keywords: ["portfolio", "developer", "software engineer", "web development", "projects", "skills", "navod", "navodwijesooriya", "navod wijesooriya portfolio"],
+  description:
+    "Professional portfolio showcasing projects, skills, and experience in software development and design by Navod",
+  keywords: [
+    "portfolio",
+    "developer",
+    "software engineer",
+    "web development",
+    "projects",
+    "skills",
+    "navod",
+    "navodwijesooriya",
+    "navod wijesooriya portfolio",
+  ],
   authors: [{ name: "Navod" }],
   creator: "Navod",
   publisher: "Navod",
@@ -23,7 +35,7 @@ export const metadata: Metadata = {
     email: false,
     telephone: false,
   },
-  metadataBase: new URL("Navod Wijesooriya Portfolio", "https://navodwijesooriya.me"),
+  metadataBase: new URL("https://navodwijesooriya.me"),
   alternates: {
     canonical: "/",
   },
@@ -33,7 +45,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Navod - Portfolio & Personal Website",
-    description: "Professional portfolio showcasing projects, skills, and experience in software development and design by Navod",
+    description:
+      "Professional portfolio showcasing projects, skills, and experience in software development and design by Navod",
     url: "https://navodwijesooriya.me",
     siteName: "Navod Wijesooriya Portfolio",
     locale: "en_US",
@@ -67,10 +80,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
