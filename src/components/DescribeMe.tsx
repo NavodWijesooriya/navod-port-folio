@@ -16,9 +16,9 @@ const Hero = () => {
         <p className="text-gray-300 text-lg md:text-xl font-mono leading-relaxed tracking-wide transition-all duration-300 mb-8">
           I am a <span className="text-purple-400">dedicated full-stack web developer</span> crafting elegant, high-performance digital solutions with technologies like
           <span className="text-blue-400"> React</span>, <span className="text-cyan-400">Next.js</span>, and <span className="text-yellow-300">Firebase</span>.
-        </p>  
+        </p>
         <Link
-          href="#get-started"
+          href="/contact"
           className="inline-block px-8 py-2 bg-green-600 text-white font-bold rounded-md shadow-lg hover:bg-green-700 transition duration-300 glow-effect"
         >
           Hire Me
