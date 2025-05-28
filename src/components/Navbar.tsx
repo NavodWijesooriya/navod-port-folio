@@ -73,9 +73,8 @@ const Navbar = () => {
             </Link>
           ))}
           <Link
-            href="/contact"
-            className="block w-full text-center px-5 py-2 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 transition"
-            onClick={() => setMenuOpen(false)}
+            href="#get-started"
+            className="inline-block px-8 py-2 bg-green-600 text-white font-bold rounded-md shadow-lg hover:bg-green-700 transition duration-300 glow-effect"
           >
             Hire Me
           </Link>
