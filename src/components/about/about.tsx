@@ -1,6 +1,6 @@
 'use client'
 
-export default function AboutPage() {
+export default function About() {
   return (
     // Use Skills page section/card style
     <section className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white px-6 md:px-12 lg:px-24 py-20 flex items-center justify-center">
