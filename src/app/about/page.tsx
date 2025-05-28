@@ -1,4 +1,4 @@
-import About from '@/components/about/About'
+import About from '@/components/about/About';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 
