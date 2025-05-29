@@ -20,6 +20,7 @@ const Hero = () => {
         <Link
           href="/contact"
           className="inline-block px-8 py-2 bg-green-600 text-white font-bold rounded-md shadow-lg hover:bg-green-700 transition duration-300 glow-effect"
+          aria-label="Contact me to discuss your project"
         >
           Hire Me
         </Link>
@@ -30,9 +31,10 @@ const Hero = () => {
         <div className="relative w-72 h-72 rounded-full overflow-hidden border-4 border-gray-700 shadow-xl">
           <Image
             src="/assets/edit-image.png"
-            alt="Profile"
+            alt="Navod Wijesooriya - Professional Headshot of Full-stack Web Developer"
             fill
             className="object-cover"
+            priority
           />
         </div>
       </div>

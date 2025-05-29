@@ -1,6 +1,8 @@
 'use client';
 
 import React from 'react';
+import Script from 'next/script';
+import Image from 'next/image';
 
 interface Project {
   title: string;
@@ -36,53 +38,84 @@ const projects: Project[] = [
 
 const ProjectsPage = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white px-6 md:px-12 lg:px-24 py-20">
-      <div className="max-w-7xl mx-auto bg-gray-900/50 backdrop-blur-md rounded-2xl border border-gray-800 shadow-xl p-8 md:p-12">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-white relative inline-block">
-          My Projects
-          <span className="block w-16 h-1 bg-purple-500 mt-2 rounded"></span>
-        </h1>
-        <p className="text-gray-300 text-lg md:text-xl font-mono leading-relaxed tracking-wide mb-12 transition-all duration-300">
-          A selection of the apps and websites I have built using modern web technologies.
-        </p>
-        <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, index) => (
-            <a
-              key={index}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white/5 backdrop-blur-md border border-gray-800 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-300 hover:shadow-purple-600/20"
-            >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h2 className="text-xl font-semibold mb-2 text-white font-mono">{project.title}</h2>
-                <p className="text-gray-300 text-sm mb-4 font-mono leading-relaxed transition-all duration-300">{project.description}</p>
-                {project.tags && (
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, idx) => (
-                      <span
-                        key={idx}
-                        className="text-xs px-2 py-1 bg-gray-800 rounded-full font-mono"
-                        style={{ 
-                          color: idx % 3 === 0 ? '#c084fc' : idx % 3 === 1 ? '#60a5fa' : '#fde047' 
-                        }}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </a>
-          ))}
+    <>
+      <section className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white px-6 md:px-12 lg:px-24 py-20">
+        <div className="max-w-7xl mx-auto bg-gray-900/50 backdrop-blur-md rounded-2xl border border-gray-800 shadow-xl p-8 md:p-12">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-white relative inline-block">
+            My Projects
+            <span className="block w-16 h-1 bg-purple-500 mt-2 rounded"></span>
+          </h1>
+          <p className="text-gray-300 text-lg md:text-xl font-mono leading-relaxed tracking-wide mb-12 transition-all duration-300">
+            A selection of the apps and websites I have built using modern web technologies.
+          </p>
+          <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            {projects.map((project, index) => (
+              <a
+                key={index}
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/5 backdrop-blur-md border border-gray-800 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-300 hover:shadow-purple-600/20"
+                aria-label={`View ${project.title} project`}
+              >
+                <Image
+                  src={project.image}
+                  alt={`Screenshot of ${project.title}`}
+                  className="w-full h-48 object-cover"
+                  width={400}
+                  height={200}
+                />
+                <div className="p-6">
+                  <h2 className="text-xl font-semibold mb-2 text-white font-mono">{project.title}</h2>
+                  <p className="text-gray-300 text-sm mb-4 font-mono leading-relaxed transition-all duration-300">{project.description}</p>
+                  {project.tags && (
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag, idx) => (
+                        <span
+                          key={idx}
+                          className="text-xs px-2 py-1 bg-gray-800 rounded-full font-mono"
+                          style={{ 
+                            color: idx % 3 === 0 ? '#c084fc' : idx % 3 === 1 ? '#60a5fa' : '#fde047' 
+                          }}
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      
+      {/* Structured data for projects */}
+      <Script
+        id="project-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": projects.map((project, index) => ({
+              "@type": "SoftwareApplication",
+              "position": index + 1,
+              "name": project.title,
+              "description": project.description,
+              "applicationCategory": "WebApplication",
+              "operatingSystem": "Any",
+              "url": project.link,
+              "author": {
+                "@type": "Person",
+                "name": "Navod Wijesooriya"
+              },
+              "keywords": project.tags?.join(", ")
+            }))
+          })
+        }}
+      />
+    </>
   );
 };
 
