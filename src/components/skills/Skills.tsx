@@ -36,19 +36,14 @@ const SkillsPage = () => {
                     <span className="text-yellow-300">{category}</span>
                   )}
                 </h2>
-                <ul className="space-y-2 text-gray-300 text-lg font-mono leading-relaxed tracking-wide">
+                <ul className="space-y-2 text-gray-300 text-sm font-mono leading-relaxed tracking-wide">
                   {items.map((skill) => (
                     <li key={skill} className="flex items-center gap-2 transition-all duration-300">
                       <CheckCircleIcon size={16} className={
                         catIndex === 0 ? "text-blue-400" :
-                        catIndex === 1 ? "text-purple-400" : "text-yellow-300"
+                          catIndex === 1 ? "text-purple-400" : "text-yellow-300"
                       } />
-                      <span className={
-                        catIndex === 0 ? "text-blue-400" :
-                        catIndex === 1 ? "text-purple-400" : "text-yellow-300"
-                      }>
-                        {skill}
-                      </span>
+                      {skill}
                     </li>
                   ))}
                 </ul>
