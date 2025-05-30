@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="min-h-screen px-6 md:px-12 lg:px-24 py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white flex flex-col lg:flex-row items-center justify-between gap-16">
       {/* Left Content */}
       <div className="text-center lg:text-left max-w-2xl bg-gray-900/50 backdrop-blur-md p-8 md:p-12 rounded-2xl border border-gray-800 shadow-xl">
-        <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-6 relative inline-block">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-white relative inline-block">
           Navod Wijesooriya
           <span className="block w-16 h-1 bg-green-500 mt-2 rounded"></span>
         </h1>

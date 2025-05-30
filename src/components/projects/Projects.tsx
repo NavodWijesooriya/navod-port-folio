@@ -67,16 +67,20 @@ const ProjectsPage = () => {
                 />
                 <div className="p-6">
                   <h2 className="text-xl font-semibold mb-2 text-white font-mono">{project.title}</h2>
-                  <p className="text-gray-300 text-sm mb-4 font-mono leading-relaxed transition-all duration-300">{project.description}</p>
+                  <p className="text-gray-300 text-lg font-mono mb-4 leading-relaxed transition-all duration-300">{project.description}</p>
                   {project.tags && (
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag, idx) => (
                         <span
                           key={idx}
-                          className="text-xs px-2 py-1 bg-gray-800 rounded-full font-mono"
-                          style={{ 
-                            color: idx % 3 === 0 ? '#c084fc' : idx % 3 === 1 ? '#60a5fa' : '#fde047' 
-                          }}
+                          className={
+                            "text-xs px-2 py-1 bg-gray-800 rounded-full font-mono " +
+                            (idx % 3 === 0
+                              ? "text-purple-400"
+                              : idx % 3 === 1
+                              ? "text-blue-400"
+                              : "text-yellow-300")
+                          }
                         >
                           {tag}
                         </span>
