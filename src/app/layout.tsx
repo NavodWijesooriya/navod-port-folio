@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     "Navod Wijesooriya portfolio",
     "Navod",
     "navod",
+    "navodwijesooriya",
+    "navod wijesooriya",
+
 
   ],
   authors: [{ name: "Navod Wijesooriya", url: "https://navodwijesooriya.me" }],
