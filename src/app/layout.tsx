@@ -19,16 +19,13 @@ export const metadata: Metadata = {
   description:
     "Full-stack web developer specializing in React, Next.js, Firebase and modern web technologies. View my projects, skills, and experience in software development.",
   keywords: [
-    "full-stack developer",
-    "React developer",
-    "Next.js developer",
-    "Firebase expert",
-    "web development",
-    "software engineer",
-    "portfolio website",
     "Navod Wijesooriya",
     "hire developer",
     "freelance developer",
+    "Navod Wijesooriya portfolio",
+    "Navod",
+    "navod",
+
   ],
   authors: [{ name: "Navod Wijesooriya", url: "https://navodwijesooriya.me" }],
   creator: "Navod Wijesooriya",
