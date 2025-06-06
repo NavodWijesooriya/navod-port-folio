@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     images: ["/assets/navodwijesooriya.png"],
   },
   verification: {
-    google: "google-site-verification-code", // Replace with your actual verification code
+    google: "google-site-verification: googlee3e7d3b2e2c7e3b2.html", // Replace with your actual verification code
     yandex: "yandex-verification-code", // Replace with your actual verification code if needed
   },
 };
@@ -112,9 +112,11 @@ export default function RootLayout({
               name: "Navod Wijesooriya",
               url: "https://navodwijesooriya.me",
               sameAs: [
-                "https://github.com/yourusername",
-                "https://linkedin.com/in/yourusername",
-                "https://twitter.com/yourusername",
+                "https://github.com/navodwijesooriya",
+                "https://linkedin.com/in/navodwijesooriya",
+                "https://twitter.com/navodwijesooriya",
+                "https://instagram.com/navodwijesooriya",
+                "https://youtube.com/@navodwijesooriya"
               ],
               jobTitle: "Full-stack Web Developer",
               worksFor: {
@@ -122,6 +124,8 @@ export default function RootLayout({
                 name: "Freelance",
               },
               image: "https://navodwijesooriya.me/assets/edit-image.png",
+              email: "navodtwijesooriya@gmail.com",
+              telephone: "+94714128942",
               description:
                 "Full-stack web developer specializing in React, Next.js, Firebase and modern web technologies.",
             }),

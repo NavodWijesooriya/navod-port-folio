@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="relative w-72 h-72 rounded-full overflow-hidden border-4 border-gray-700 shadow-xl">
           <Image
             src="/assets/edit-image.png"
-            alt="Navod Wijesooriya - Professional Headshot of Full-stack Web Developer"
+            alt="Navod Wijesooriya - Full-stack Web Developer, professional headshot"
             fill
             className="object-cover"
             priority
