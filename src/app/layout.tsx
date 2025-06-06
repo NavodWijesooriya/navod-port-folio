@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "@/components/ClientLayout";
@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Navod Wijesooriya | Portfolio",
   description:
     "Full-stack web developer specializing in React, Next.js, Firebase and modern web technologies. View my projects, skills, and experience in software development.",
@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     "Navod",
     "navod",
     "navod wijesooriya",
-
   ],
   authors: [{ name: "Navod Wijesooriya", url: "https://navodwijesooriya.me" }],
   creator: "Navod Wijesooriya",
@@ -81,7 +80,7 @@ export const metadata: Metadata = {
     google: "google-site-verification: googlee3e7d3b2e2c7e3b2.html", // Replace with your actual verification code
     yandex: "yandex-verification-code", // Replace with your actual verification code if needed
   },
-};
+} as Metadata;
 
 export const viewport = {
   width: "device-width",
