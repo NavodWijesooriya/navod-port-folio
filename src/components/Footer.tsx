@@ -12,32 +12,32 @@ import {
 const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com/yourusername",
+    url: "https://github.com/navodwijesooriya",
     icon: <Github className="w-5 h-5 text-purple-400" />,
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://linkedin.com/in/navodwijesooriya",
     icon: <Linkedin className="w-5 h-5 text-blue-400" />,
   },
   {
     name: "Twitter",
-    url: "https://twitter.com/yourusername",
+    url: "https://twitter.com/navodwijesooriya",
     icon: <Twitter className="w-5 h-5 text-cyan-400" />,
   },
   {
     name: "Instagram",
-    url: "https://instagram.com/yourusername",
+    url: "https://instagram.com/navodwijesooriya",
     icon: <Instagram className="w-5 h-5 text-pink-400" />,
   },
   {
     name: "YouTube",
-    url: "https://youtube.com/@yourchannel",
+    url: "https://youtube.com/@navodwijesooriya",
     icon: <Youtube className="w-5 h-5 text-red-500" />,
   },
   {
     name: "Email",
-    url: "mailto:you@example.com",
+    url: "mailto:navodtwijesooriya@gmail.com",
     icon: <Mail className="w-5 h-5 text-yellow-300" />,
   },
 ];

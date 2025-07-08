@@ -10,6 +10,7 @@ const AboutSection: React.FC = () => {
           <span className="block w-16 h-1 bg-purple-500 mt-2 rounded"></span>
         </h2>
         <p className="text-gray-300 text-lg md:text-xl font-mono leading-relaxed tracking-wide transition-all duration-300">
+          <span className="sr-only">Navod Wijesooriya, Full-stack Web Developer, React, Next.js, Firebase, Portfolio, Sri Lanka, Freelancer</span>
           I am a <span className="text-purple-400">passionate full-stack web developer</span> specializing in crafting
           high-performance, user-friendly web applications using modern technologies like
           <span className="text-blue-400"> React</span>, <span className="text-cyan-400">Next.js</span>, and{" "}
@@ -23,6 +24,9 @@ const AboutSection: React.FC = () => {
           <br />
           Whether you are looking to build a sleek portfolio, a dynamic business platform, or a scalable admin panel —
           <span className="text-purple-300 font-semibold"> I am here to bring your ideas to life.</span>
+          <br />
+          <br />
+          <span className="sr-only">Contact me for freelance web development, React, Next.js, Firebase, and modern web solutions.</span>
         </p>
       </div>
     </section>

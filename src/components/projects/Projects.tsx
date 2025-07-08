@@ -30,8 +30,8 @@ const projects: Project[] = [
   {
     title: 'Portfolio Website',
     description: 'My personal portfolio built with React 19 and styled with Tailwind CSS.',
-    link: '#',
-    image: '/assrts/port-folio.png',
+    link: 'https://navodwijesooriya.me',
+    image: '/assets/port-folio.png', // fixed typo from '/assrts/port-folio.png'
     tags: ['React 19', 'Tailwind', 'Next.js'],
   },
 ];
@@ -60,10 +60,11 @@ const ProjectsPage = () => {
               >
                 <Image
                   src={project.image}
-                  alt={`Screenshot of ${project.title}`}
+                  alt={`Screenshot of ${project.title} by Navod Wijesooriya`}
                   className="w-full h-48 object-cover"
                   width={400}
                   height={200}
+                  priority={index === 0}
                 />
                 <div className="p-6">
                   <h2 className="text-xl font-semibold mb-2 text-white font-mono">{project.title}</h2>
