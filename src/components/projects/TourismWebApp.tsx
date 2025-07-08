@@ -4,7 +4,6 @@ import React from 'react';
 import {
   FaGlobeAsia,
   FaCode,
-  FaMobileAlt,
   FaDatabase,
   FaRocket
 } from 'react-icons/fa';
