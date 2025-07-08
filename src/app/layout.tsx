@@ -25,14 +25,12 @@ export const metadata = {
     "Navod Wijesooriya portfolio",
     "Navod",
     "navod",
-<<<<<<< HEAD
+
     "navodwijesooriya",
     "navod wijesooriya",
 
-
-=======
     "navod wijesooriya",
->>>>>>> ccf088329e170ef4dc3c00b5c27a79732853db54
+
   ],
   authors: [{ name: "Navod Wijesooriya", url: "https://navodwijesooriya.me" }],
   creator: "Navod Wijesooriya",
