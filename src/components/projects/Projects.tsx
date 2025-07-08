@@ -16,8 +16,8 @@ const projects: Project[] = [
   {
     title: 'Tourism Web App',
     description: 'A feature-rich tourism platform with Next.js, Firebase, and real-time data.',
-    link: 'https://your-tourism-app.com',
-    image: '/images/tourism-app.png',
+    link: 'projects/tourism-web-app',
+    image: '/assets/mooi-home.png',
     tags: ['Next.js', 'Firebase', 'Tailwind'],
   },
   {
