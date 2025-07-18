@@ -3,6 +3,7 @@
 import React from 'react';
 import Script from 'next/script';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface Project {
   title: string;
@@ -46,21 +47,19 @@ const ProjectsPage = () => {
             <span className="block w-16 h-1 bg-purple-500 mt-2 rounded"></span>
           </h1>
           <p className="text-gray-300 text-lg md:text-xl font-mono leading-relaxed tracking-wide mb-12 transition-all duration-300">
-            A selection of the apps and websites I have built using modern web technologies.
+            A selection of the apps and websites I have built using modern web technologies like React, Next.js, Firebase, and React Native.
           </p>
           <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
-              <a
+              <Link
                 key={index}
                 href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/5 backdrop-blur-md border border-gray-800 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-300 hover:shadow-purple-600/20"
-                aria-label={`View ${project.title} project`}
+                className="bg-white/5 backdrop-blur-md border border-gray-800 rounded-2xl overflow-hidden shadow-xl transform transition-all duration-300 hover:shadow-purple-600/20 block"
+                aria-label={`View details about ${project.title} project`}
               >
                 <Image
                   src={project.image}
-                  alt={`Screenshot of ${project.title} by Navod Wijesooriya`}
+                  alt={`${project.title} screenshot - ${project.description}`}
                   className="w-full h-48 object-cover"
                   width={400}
                   height={200}
@@ -85,33 +84,38 @@ const ProjectsPage = () => {
                     </div>
                   )}
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Structured data for projects */}
+      {/* Enhanced structured data for projects */}
       <Script
-        id="project-schema"
+        id="enhanced-project-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
+            "name": "Navod Wijesooriya's Web Development Projects",
+            "description": "Portfolio of web development projects showcasing React, Next.js, Firebase, and React Native applications",
             "itemListElement": projects.map((project, index) => ({
               "@type": "SoftwareApplication",
               "position": index + 1,
               "name": project.title,
               "description": project.description,
-              "applicationCategory": "WebApplication",
-              "operatingSystem": "Any",
-              "url": project.link,
+              "applicationCategory": project.title.includes("Mobile") ? "MobileApplication" : "WebApplication",
+              "operatingSystem": project.title.includes("Mobile") ? "iOS, Android" : "Any",
+              "url": `https://navodwijesooriya.me/${project.link}`,
               "author": {
                 "@type": "Person",
-                "name": "Navod Wijesooriya"
+                "name": "Navod Wijesooriya",
+                "url": "https://navodwijesooriya.me"
               },
-              "keywords": project.tags?.join(", ")
+              "programmingLanguage": project.tags?.join(", "),
+              "keywords": project.tags?.join(", "),
+              "image": `https://navodwijesooriya.me${project.image}`
             }))
           })
         }}
