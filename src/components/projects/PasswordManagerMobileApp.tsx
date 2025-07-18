@@ -304,7 +304,7 @@ const PasswordManagerMobileApp: React.FC = () => {
                 <div>
                   <h4 className="text-lg font-semibold text-white font-mono mb-2">Biometric Security</h4>
                   <p className="text-gray-300 text-sm font-mono leading-relaxed">
-                    Advanced biometric authentication using device's built-in Face ID, Touch ID, or fingerprint sensors for secure access.
+                    Advanced biometric authentication using device is built-in Face ID, Touch ID, or fingerprint sensors for secure access.
                   </p>
                 </div>
               </div>
