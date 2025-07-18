@@ -21,16 +21,16 @@ const projects: Project[] = [
     tags: ['Next.js', 'Firebase', 'Tailwind'],
   },
   {
-    title: 'Customer Issues Tracker',
-    description: 'A customer issues tracking system built with React 19, Node.js, and MongoDB.',
-    link: 'https://crm-interithm.vercel.app/',
-    image: '/assets/crm.png',
-    tags: ['React', 'Firebase', 'Nextjs'],
+    title: 'Password Manager Mobile App',
+    description: 'A password manager mobile app built with React Native and expo.',
+    link: 'projects/password-manager-mobile-app',
+    image: '/assets/dashboard.jpeg',
+    tags: ['React', 'Expo'],
   },
   {
     title: 'Portfolio Website',
     description: 'My personal portfolio built with React 19 and styled with Tailwind CSS.',
-    link: 'https://navodwijesooriya.me',
+    link: 'projects',
     image: '/assets/port-folio.png', // fixed typo from '/assrts/port-folio.png'
     tags: ['React 19', 'Tailwind', 'Next.js'],
   },

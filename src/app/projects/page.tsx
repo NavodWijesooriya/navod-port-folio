@@ -1,7 +1,9 @@
 import Projects from "@/components/projects/Projects";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import type { Metadata } from "next";
+import { Metadata } from "next";
+import PasswordManagerMobileApp from "@/components/projects/PasswordManagerMobileApp";
+import TourismWebApp from "@/components/projects/TourismWebApp";
 
 export const metadata: Metadata = {
   title: "Projects | Navod Wijesooriya - Full-stack Developer",
@@ -17,6 +19,8 @@ const page = () => {
         <div>
              <Navbar />
             <Projects />
+            <TourismWebApp />
+            <PasswordManagerMobileApp />
             <Footer />  
         </div>
     )
