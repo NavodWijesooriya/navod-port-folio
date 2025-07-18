@@ -23,7 +23,7 @@ const projects: Project[] = [
   {
     title: 'Password Manager Mobile App',
     description: 'A password manager mobile app built with React Native and expo.',
-    link: 'projects/password-manager-mobile-app',
+    link: 'projects/passward-manager-mobileapp',
     image: '/assets/dashboard.jpeg',
     tags: ['React', 'Expo'],
   },
