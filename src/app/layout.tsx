@@ -15,22 +15,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Navod Wijesooriya | Portfolio",
+  title: {
+    default: "Navod Wijesooriya | Full-stack Web Developer | React & Next.js Expert",
+    template: "%s | Navod Wijesooriya"
+  },
   description:
-    "Full-stack web developer specializing in React, Next.js, Firebase and modern web technologies. View my projects, skills, and experience in software development.",
+    "Hire Navod Wijesooriya, an expert full-stack web developer from Sri Lanka specializing in React, Next.js, Firebase, and modern web technologies. Available for freelance projects and full-time opportunities.",
   keywords: [
-    "Navod Wijesooriya",
-    "hire developer",
-    "freelance developer",
-    "Navod Wijesooriya portfolio",
-    "Navod",
-    "navod",
-
-    "navodwijesooriya",
-    "navod wijesooriya",
-
-    "navod wijesooriya",
-
+    "Navod Wijesooriya", "full-stack developer", "React developer", "Next.js expert",
+    "Firebase developer", "web developer Sri Lanka", "freelance developer",
+    "JavaScript developer", "TypeScript developer", "hire developer",
+    "portfolio website", "travel booking app", "mobile app developer",
+    "React Native developer", "modern web development", "responsive design"
   ],
   authors: [{ name: "Navod Wijesooriya", url: "https://navodwijesooriya.me" }],
   creator: "Navod Wijesooriya",
@@ -43,7 +39,7 @@ export const metadata = {
   alternates: {
     canonical: "/",
     languages: {
-      "en-US": "/en-US",
+      "en-US": "/",
     },
   },
   robots: {
@@ -60,7 +56,7 @@ export const metadata = {
   openGraph: {
     title: "Navod Wijesooriya | Full-stack Web Developer",
     description:
-      "Full-stack web developer specializing in React, Next.js, Firebase and modern web technologies.",
+      "Expert full-stack web developer specializing in React, Next.js, Firebase and modern web technologies. Available for hire.",
     url: "https://navodwijesooriya.me",
     siteName: "Navod Wijesooriya Portfolio",
     locale: "en_US",
@@ -70,21 +66,21 @@ export const metadata = {
         url: "/assets/navodwijesooriya.png",
         width: 1200,
         height: 630,
-        alt: "Navod Wijesooriya - Full-stack Developer",
+        alt: "Navod Wijesooriya - Full-stack Developer Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Navod Wijesooriya | Full-stack Web Developer",
-    description: "Full-stack developer specializing in React, Next.js and Firebase",
+    description: "Expert full-stack developer specializing in React, Next.js and Firebase. Available for hire.",
     creator: "@navodwijesooriya",
     images: ["/assets/navodwijesooriya.png"],
   },
   verification: {
-    google: "google-site-verification: googlee3e7d3b2e2c7e3b2.html", // Replace with your actual verification code
-    yandex: "yandex-verification-code", // Replace with your actual verification code if needed
+    google: "your-google-verification-code", // Replace with actual verification code
   },
+  category: "Technology",
 } as Metadata;
 
 export const viewport = {
@@ -103,11 +99,13 @@ export default function RootLayout({
         <link rel="canonical" href="https://navodwijesooriya.me" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="msapplication-TileColor" content="#000000" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}>
         <ClientLayout>{children}</ClientLayout>
         <Script
-          id="schema-script"
+          id="enhanced-schema-script"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -115,6 +113,7 @@ export default function RootLayout({
               "@type": "Person",
               name: "Navod Wijesooriya",
               url: "https://navodwijesooriya.me",
+              image: "https://navodwijesooriya.me/assets/edit-image.png",
               sameAs: [
                 "https://github.com/navodwijesooriya",
                 "https://linkedin.com/in/navodwijesooriya",
@@ -125,13 +124,32 @@ export default function RootLayout({
               jobTitle: "Full-stack Web Developer",
               worksFor: {
                 "@type": "Organization",
-                name: "Freelance",
+                name: "Freelancer",
               },
-              image: "https://navodwijesooriya.me/assets/edit-image.png",
               email: "navodtwijesooriya@gmail.com",
               telephone: "+94714128942",
-              description:
-                "Full-stack web developer specializing in React, Next.js, Firebase and modern web technologies.",
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "Sri Lanka"
+              },
+              knowsAbout: [
+                "React", "Next.js", "Firebase", "TypeScript", "JavaScript",
+                "React Native", "Node.js", "Web Development", "Mobile App Development"
+              ],
+              alumniOf: {
+                "@type": "Organization",
+                name: "Software Developer"
+              },
+              description: "Expert full-stack web developer specializing in React, Next.js, Firebase and modern web technologies. Available for freelance projects and full-time opportunities.",
+              hasOccupation: {
+                "@type": "Occupation",
+                name: "Full-stack Web Developer",
+                occupationLocation: {
+                  "@type": "Country",
+                  name: "Sri Lanka"
+                },
+                skills: "React, Next.js, Firebase, TypeScript, JavaScript, React Native"
+              }
             }),
           }}
         />
