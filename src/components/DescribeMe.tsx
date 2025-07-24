@@ -6,9 +6,9 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <section className="min-h-screen px-6 md:px-12 lg:px-24 py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white flex flex-col lg:flex-row items-center justify-between gap-16">
+    <section className="min-h-screen px-6 md:px-12 lg:px-24 py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
       {/* Left Content */}
-      <div className="text-center lg:text-left max-w-2xl bg-gray-900/50 backdrop-blur-md p-8 md:p-12 rounded-2xl border border-gray-800 shadow-xl">
+      <div className="text-center lg:text-left flex-1 max-w-2xl bg-gray-900/50 backdrop-blur-md p-8 md:p-12 rounded-2xl border border-gray-800 shadow-xl">
         <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-6 relative inline-block text-white">
           Navod Wijesooriya
           <span className="block w-16 h-1 bg-green-500 mt-2 rounded"></span>
@@ -27,10 +27,10 @@ const Hero = () => {
       </div>
 
       {/* Right Content - Image */}
-      <div className="w-full max-w-md flex justify-center items-center mx-auto">
-        <div className="relative w-72 h-72 rounded-full overflow-hidden border-4 border-gray-700 shadow-xl">
+      <div className="flex-1 flex justify-center items-center max-w-lg">
+        <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-gray-700 shadow-xl">
           <Image
-            src="/assets/navid-ai-image.jpeg"
+            src="/assets/navid-ai-image-edit.jpeg"
             alt="Navod Wijesooriya - Full-stack Web Developer, professional headshot"
             fill
             className="object-cover"
