@@ -15,13 +15,13 @@ export default function ResumePage() {
         </p>
         <div className="w-full max-w-4xl aspect-video mb-8 rounded-lg overflow-hidden shadow-lg border border-gray-700 bg-black/60">
           <iframe
-            src="assets/Resume(Navo_Wijesooriya)_CV_.pdf"
+            src="assets/Resume(Navo_Wijesooriya).pdf"
             title="Resume PDF"
             className="w-full h-full"
           ></iframe>
         </div>
         <a
-          href="Resume(Navo_Wijesooriya)_CV_.pdf"
+          href="assets/Resume(Navo_Wijesooriya).pdf"
           download
           className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-md shadow hover:bg-green-700 transition-all duration-300 font-mono"
         >
