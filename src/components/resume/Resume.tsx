@@ -21,7 +21,7 @@ export default function ResumePage() {
           ></iframe>
         </div>
         <a
-          href="assets/Resume(Navo_Wijesooriya).pdf"
+          href="assets/Navod_Wijesooriya_Resume.pdf"
           download
           className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-md shadow hover:bg-green-700 transition-all duration-300 font-mono"
         >
