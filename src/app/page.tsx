@@ -7,6 +7,7 @@ import Skills from "@/components/skills/Skills";
 import Script from "next/script";
 import type { Metadata } from "next";
 
+
 export const metadata: Metadata = {
   title: "Navod Wijesooriya | Full-stack Web Developer | React & Next.js Expert",
   description:
