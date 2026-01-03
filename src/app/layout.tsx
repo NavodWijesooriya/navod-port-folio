@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "@/components/ClientLayout";
 import Script from "next/script";
-import SanowFall from "@/components/SanowFall";
+// import SanowFall from "@/components/SanowFall";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -104,7 +104,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#000000" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}>
-     
+
         <ClientLayout>
           <div
             style={{
@@ -117,7 +117,7 @@ export default function RootLayout({
               pointerEvents: 'none',
             }}
           >
-            <SanowFall />
+            {/* <SanowFall /> */}
           </div>
           {children}
         </ClientLayout>
